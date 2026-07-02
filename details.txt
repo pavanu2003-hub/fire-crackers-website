@@ -1,0 +1,44 @@
+Build only the frontend for “Hosur Saravana Crackers” as a premium responsive website. Use HTML, CSS, and JavaScript only. No backend, no database, no authentication, no admin panel, no API integration.
+
+Design:
+- modern festive premium UI
+- colors: red, orange, gold, cream, dark blue
+- clean spacing, modern typography, soft glow, subtle gradients
+- mobile-first, fast, attractive, trustworthy
+
+Sections:
+- header
+- hero
+- benefits
+- categories
+- featured products
+- offer banner
+- about
+- safety tips
+- contact
+- footer
+
+Frontend features only:
+- responsive navbar
+- product category filter
+- search box
+- add to enquiry button
+- floating enquiry summary
+- WhatsApp enquiry button
+- smooth scroll
+- hover effects
+- scroll reveal animations
+
+Content:
+Use realistic demo content for a crackers shop. Add 12 sample products with name, category, MRP, offer price, and label.
+
+Output:
+Return only:
+- index.html
+- style.css
+- script.js
+
+Important:
+- frontend only
+- original design
+- good-looking UI

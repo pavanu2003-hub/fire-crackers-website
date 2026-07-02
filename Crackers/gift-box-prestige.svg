@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <radialGradient id="bgpr" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a0800"/>
+      <stop offset="100%" stop-color="#050400"/>
+    </radialGradient>
+    <linearGradient id="boxPr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1610"/>
+      <stop offset="100%" stop-color="#0a0800"/>
+    </linearGradient>
+    <linearGradient id="lidPr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2215"/>
+      <stop offset="100%" stop-color="#100e08"/>
+    </linearGradient>
+    <linearGradient id="ribbonPr" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff0a0"/>
+      <stop offset="30%" stop-color="#f0c840"/>
+      <stop offset="70%" stop-color="#d4a017"/>
+      <stop offset="100%" stop-color="#a07800"/>
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a07800"/>
+      <stop offset="25%" stop-color="#f0c840"/>
+      <stop offset="50%" stop-color="#fff0a0"/>
+      <stop offset="75%" stop-color="#f0c840"/>
+      <stop offset="100%" stop-color="#a07800"/>
+    </linearGradient>
+    <filter id="glowpr">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowpr2">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bgpr)"/>
+
+  <!-- Background gold glow -->
+  <ellipse cx="300" cy="230" rx="190" ry="130" fill="#d4a017" opacity="0.07" filter="url(#glowpr)"/>
+
+  <!-- Box shadow -->
+  <ellipse cx="302" cy="360" rx="120" ry="14" fill="#000" opacity="0.6"/>
+
+  <!-- Box body (matte black with gold trim) -->
+  <rect x="165" y="225" width="270" height="128" rx="7" fill="url(#boxPr)"/>
+  <!-- Gold border on box -->
+  <rect x="165" y="225" width="270" height="128" rx="7" fill="none" stroke="url(#goldAccent)" stroke-width="2"/>
+  <!-- Subtle texture lines -->
+  <line x1="165" y1="257" x2="435" y2="257" stroke="#d4a017" stroke-width="0.5" opacity="0.2"/>
+  <line x1="165" y1="289" x2="435" y2="289" stroke="#d4a017" stroke-width="0.5" opacity="0.2"/>
+  <line x1="165" y1="321" x2="435" y2="321" stroke="#d4a017" stroke-width="0.5" opacity="0.2"/>
+  <line x1="237" y1="225" x2="237" y2="353" stroke="#d4a017" stroke-width="0.5" opacity="0.2"/>
+  <line x1="300" y1="225" x2="300" y2="353" stroke="#d4a017" stroke-width="0.5" opacity="0.2"/>
+  <line x1="363" y1="225" x2="363" y2="353" stroke="#d4a017" stroke-width="0.5" opacity="0.2"/>
+  <!-- Left shadow depth -->
+  <rect x="165" y="225" width="16" height="128" rx="2" fill="#000" opacity="0.25"/>
+
+  <!-- Ornate gold crest on box center -->
+  <text x="300" y="296" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#d4a017" opacity="0.4" letter-spacing="3">✦ PRESTIGE ✦</text>
+  <text x="300" y="318" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#d4a017" opacity="0.3" letter-spacing="4">IDENTITY</text>
+
+  <!-- Lid (matte black) -->
+  <rect x="150" y="186" width="300" height="46" rx="7" fill="url(#lidPr)"/>
+  <!-- Gold border on lid -->
+  <rect x="150" y="186" width="300" height="46" rx="7" fill="none" stroke="url(#goldAccent)" stroke-width="2"/>
+  <rect x="150" y="186" width="300" height="13" rx="7" fill="#fff" opacity="0.04"/>
+
+  <!-- Vertical ribbon (wide gold) -->
+  <rect x="280" y="225" width="40" height="128" fill="url(#ribbonPr)" opacity="0.88"/>
+  <rect x="280" y="186" width="40" height="46" fill="url(#ribbonPr)" opacity="0.88"/>
+  <!-- Horizontal ribbon on lid -->
+  <rect x="150" y="201" width="300" height="20" fill="url(#ribbonPr)" opacity="0.78"/>
+
+  <!-- Grand bow with multiple loops -->
+  <ellipse cx="268" cy="186" rx="46" ry="27" fill="url(#ribbonPr)" transform="rotate(-30,268,186)"/>
+  <ellipse cx="332" cy="186" rx="46" ry="27" fill="url(#ribbonPr)" transform="rotate(30,332,186)"/>
+  <ellipse cx="255" cy="186" rx="28" ry="16" fill="url(#ribbonPr)" transform="rotate(-55,255,186)" opacity="0.85"/>
+  <ellipse cx="345" cy="186" rx="28" ry="16" fill="url(#ribbonPr)" transform="rotate(55,345,186)" opacity="0.85"/>
+  <!-- Bow tails -->
+  <path d="M 285 186 Q 265 215 245 230" stroke="url(#ribbonPr)" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <path d="M 315 186 Q 335 215 355 230" stroke="url(#ribbonPr)" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <!-- Bow knot -->
+  <circle cx="300" cy="186" r="20" fill="#f0c840"/>
+  <circle cx="300" cy="186" r="12" fill="#d4a017"/>
+  <circle cx="300" cy="186" r="6" fill="#fff0a0"/>
+
+  <!-- Luxury sparkles -->
+  <text x="118" y="162" font-size="28" fill="#f0c040" opacity="0.9" filter="url(#glowpr2)">✦</text>
+  <text x="452" y="155" font-size="22" fill="#f0c040" opacity="0.8" filter="url(#glowpr2)">✦</text>
+  <text x="128" y="340" font-size="16" fill="#f0c040" opacity="0.5">✦</text>
+  <text x="460" y="345" font-size="20" fill="#f0c040" opacity="0.6">✦</text>
+  <text x="492" y="225" font-size="14" fill="#f0c040" opacity="0.4">✦</text>
+  <text x="100" y="255" font-size="14" fill="#f0c040" opacity="0.4">✦</text>
+  <text x="300" y="140" font-size="12" fill="#f0c040" opacity="0.35" text-anchor="middle">✦ ✦ ✦</text>
+
+  <!-- Bottom label -->
+  <rect x="150" y="362" width="300" height="30" rx="4" fill="#000" opacity="0.4"/>
+  <text x="300" y="382" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#f0c040" font-weight="bold">Gift Box — PRESTIGE IDENTITY</text>
+</svg>

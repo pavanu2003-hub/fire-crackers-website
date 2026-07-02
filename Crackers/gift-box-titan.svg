@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <radialGradient id="bgti" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a0a18"/>
+      <stop offset="100%" stop-color="#04040c"/>
+    </radialGradient>
+    <linearGradient id="boxTi" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a1880"/>
+      <stop offset="100%" stop-color="#180840"/>
+    </linearGradient>
+    <linearGradient id="lidTi" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a20a0"/>
+      <stop offset="100%" stop-color="#220a58"/>
+    </linearGradient>
+    <linearGradient id="ribbonTi" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffe080"/>
+      <stop offset="50%" stop-color="#f0c040"/>
+      <stop offset="100%" stop-color="#c8800a"/>
+    </linearGradient>
+    <filter id="glowti">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bgti)"/>
+
+  <!-- Background glow -->
+  <ellipse cx="300" cy="230" rx="180" ry="120" fill="#4a20a0" opacity="0.12" filter="url(#glowti)"/>
+
+  <!-- Box shadow -->
+  <ellipse cx="302" cy="358" rx="115" ry="14" fill="#000" opacity="0.45"/>
+
+  <!-- Box body -->
+  <rect x="170" y="230" width="260" height="122" rx="6" fill="url(#boxTi)"/>
+  <!-- Diamond pattern on box -->
+  <rect x="170" y="230" width="260" height="122" rx="6" fill="none" stroke="#6030c0" stroke-width="1" opacity="0.4"/>
+  <line x1="170" y1="270" x2="430" y2="270" stroke="#6030c0" stroke-width="0.8" opacity="0.25"/>
+  <line x1="170" y1="310" x2="430" y2="310" stroke="#6030c0" stroke-width="0.8" opacity="0.25"/>
+  <line x1="260" y1="230" x2="260" y2="352" stroke="#6030c0" stroke-width="0.8" opacity="0.25"/>
+  <line x1="340" y1="230" x2="340" y2="352" stroke="#6030c0" stroke-width="0.8" opacity="0.25"/>
+  <rect x="170" y="230" width="260" height="32" rx="6" fill="#fff" opacity="0.05"/>
+  <rect x="170" y="230" width="14" height="122" rx="2" fill="#000" opacity="0.18"/>
+
+  <!-- Lid -->
+  <rect x="157" y="194" width="286" height="44" rx="7" fill="url(#lidTi)"/>
+  <rect x="157" y="194" width="286" height="14" rx="7" fill="#fff" opacity="0.1"/>
+  <!-- Gold trim on lid edges -->
+  <rect x="157" y="194" width="286" height="3" rx="2" fill="url(#ribbonTi)" opacity="0.7"/>
+  <rect x="157" y="235" width="286" height="3" rx="2" fill="url(#ribbonTi)" opacity="0.7"/>
+
+  <!-- Vertical ribbon -->
+  <rect x="282" y="230" width="36" height="122" fill="url(#ribbonTi)" opacity="0.85"/>
+  <rect x="282" y="194" width="36" height="44" fill="url(#ribbonTi)" opacity="0.85"/>
+  <!-- Horizontal ribbon on lid -->
+  <rect x="157" y="208" width="286" height="18" fill="url(#ribbonTi)" opacity="0.75"/>
+
+  <!-- Fancy bow with extra loops -->
+  <ellipse cx="272" cy="194" rx="42" ry="24" fill="url(#ribbonTi)" transform="rotate(-28,272,194)"/>
+  <ellipse cx="328" cy="194" rx="42" ry="24" fill="url(#ribbonTi)" transform="rotate(28,328,194)"/>
+  <!-- Small extra loops -->
+  <ellipse cx="260" cy="194" rx="22" ry="14" fill="url(#ribbonTi)" transform="rotate(-45,260,194)" opacity="0.8"/>
+  <ellipse cx="340" cy="194" rx="22" ry="14" fill="url(#ribbonTi)" transform="rotate(45,340,194)" opacity="0.8"/>
+  <circle cx="300" cy="194" r="18" fill="#ffe080"/>
+  <circle cx="300" cy="194" r="10" fill="#c8800a"/>
+  <circle cx="300" cy="194" r="5" fill="#ffe080"/>
+
+  <!-- Sparkles -->
+  <text x="130" y="175" font-size="26" fill="#f0c040" opacity="0.9" filter="url(#glowti)">✦</text>
+  <text x="442" y="168" font-size="20" fill="#f0c040" opacity="0.7" filter="url(#glowti)">✦</text>
+  <text x="140" y="345" font-size="14" fill="#f0c040" opacity="0.4">✦</text>
+  <text x="450" y="348" font-size="18" fill="#f0c040" opacity="0.5">✦</text>
+  <text x="480" y="230" font-size="12" fill="#f0c040" opacity="0.35">✦</text>
+  <text x="110" y="260" font-size="12" fill="#f0c040" opacity="0.35">✦</text>
+
+  <!-- TITAN label on box front -->
+  <text x="300" y="302" text-anchor="middle" font-family="Georgia,serif" font-size="28" fill="#f0c040" font-weight="bold" opacity="0.25" letter-spacing="6">TITAN</text>
+
+  <!-- Bottom label -->
+  <rect x="157" y="360" width="286" height="30" rx="4" fill="#000" opacity="0.35"/>
+  <text x="300" y="380" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#ffe080" font-weight="bold">Gift Box — TITAN</text>
+</svg>

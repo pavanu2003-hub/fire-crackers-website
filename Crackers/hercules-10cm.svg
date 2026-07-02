@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <radialGradient id="bgher" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0d0d1a"/>
+    </radialGradient>
+    <linearGradient id="herRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b80000"/>
+      <stop offset="40%" stop-color="#e82020"/>
+      <stop offset="100%" stop-color="#900000"/>
+    </linearGradient>
+    <linearGradient id="herGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffe080"/>
+      <stop offset="100%" stop-color="#c8a020"/>
+    </linearGradient>
+    <filter id="glowher">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bgher)"/>
+
+  <!-- Glow behind crackers -->
+  <ellipse cx="300" cy="200" rx="200" ry="130" fill="#e82020" opacity="0.07"/>
+
+  <!-- Main string -->
+  <path d="M 160 70 Q 300 50 440 70" stroke="#aaa" stroke-width="2.5" fill="none"/>
+
+  <!-- Larger deluxe crackers -->
+  <!-- Cracker 1 -->
+  <line x1="185" y1="70" x2="185" y2="110" stroke="#aaa" stroke-width="2"/>
+  <rect x="166" y="110" width="38" height="75" rx="5" fill="url(#herRed)"/>
+  <rect x="166" y="110" width="38" height="10" rx="3" fill="url(#herGold)"/>
+  <rect x="166" y="175" width="38" height="10" rx="3" fill="url(#herGold)"/>
+  <!-- DELUXE band in center -->
+  <rect x="166" y="138" width="38" height="18" fill="#222" opacity="0.5"/>
+  <text x="185" y="151" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#f0c040" font-weight="bold">DELUXE</text>
+  <line x1="185" y1="185" x2="185" y2="205" stroke="#aaa" stroke-width="2"/>
+
+  <!-- Cracker 2 -->
+  <line x1="240" y1="70" x2="240" y2="105" stroke="#aaa" stroke-width="2"/>
+  <rect x="221" y="105" width="38" height="75" rx="5" fill="url(#herRed)"/>
+  <rect x="221" y="105" width="38" height="10" rx="3" fill="url(#herGold)"/>
+  <rect x="221" y="170" width="38" height="10" rx="3" fill="url(#herGold)"/>
+  <rect x="221" y="133" width="38" height="18" fill="#222" opacity="0.5"/>
+  <text x="240" y="146" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#f0c040" font-weight="bold">DELUXE</text>
+  <line x1="240" y1="180" x2="240" y2="200" stroke="#aaa" stroke-width="2"/>
+
+  <!-- Centre cracker (largest) -->
+  <line x1="300" y1="50" x2="300" y2="95" stroke="#aaa" stroke-width="2.5"/>
+  <rect x="278" y="95" width="44" height="90" rx="6" fill="url(#herRed)"/>
+  <rect x="278" y="95" width="44" height="12" rx="4" fill="url(#herGold)"/>
+  <rect x="278" y="173" width="44" height="12" rx="4" fill="url(#herGold)"/>
+  <rect x="278" y="126" width="44" height="22" fill="#111" opacity="0.55"/>
+  <text x="300" y="141" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#f0c040" font-weight="bold">HERCULES</text>
+  <!-- Lit fuse -->
+  <line x1="300" y1="185" x2="300" y2="230" stroke="#aaa" stroke-width="2"/>
+  <circle cx="300" cy="233" r="5" fill="#ffaa00" filter="url(#glowher)"/>
+  <circle cx="300" cy="233" r="10" fill="#ff6600" opacity="0.35" filter="url(#glowher)"/>
+  <!-- spark trails -->
+  <line x1="300" y1="233" x2="285" y2="248" stroke="#ff8800" stroke-width="1.5" opacity="0.8"/>
+  <line x1="300" y1="233" x2="315" y2="250" stroke="#ffcc00" stroke-width="1.5" opacity="0.8"/>
+  <line x1="300" y1="233" x2="290" y2="255" stroke="#ff4400" stroke-width="1" opacity="0.6"/>
+
+  <!-- Cracker 4 -->
+  <line x1="360" y1="70" x2="360" y2="105" stroke="#aaa" stroke-width="2"/>
+  <rect x="341" y="105" width="38" height="75" rx="5" fill="url(#herRed)"/>
+  <rect x="341" y="105" width="38" height="10" rx="3" fill="url(#herGold)"/>
+  <rect x="341" y="170" width="38" height="10" rx="3" fill="url(#herGold)"/>
+  <rect x="341" y="133" width="38" height="18" fill="#222" opacity="0.5"/>
+  <text x="360" y="146" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#f0c040" font-weight="bold">DELUXE</text>
+  <line x1="360" y1="180" x2="360" y2="200" stroke="#aaa" stroke-width="2"/>
+
+  <!-- Cracker 5 -->
+  <line x1="415" y1="70" x2="415" y2="110" stroke="#aaa" stroke-width="2"/>
+  <rect x="396" y="110" width="38" height="75" rx="5" fill="url(#herRed)"/>
+  <rect x="396" y="110" width="38" height="10" rx="3" fill="url(#herGold)"/>
+  <rect x="396" y="175" width="38" height="10" rx="3" fill="url(#herGold)"/>
+  <rect x="396" y="138" width="38" height="18" fill="#222" opacity="0.5"/>
+  <text x="415" y="151" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#f0c040" font-weight="bold">DELUXE</text>
+  <line x1="415" y1="185" x2="415" y2="205" stroke="#aaa" stroke-width="2"/>
+
+  <!-- Label block -->
+  <rect x="150" y="295" width="300" height="65" rx="10" fill="#e82020" opacity="0.12"/>
+  <text x="300" y="325" text-anchor="middle" font-family="Georgia,serif" font-size="24" fill="#d4a017" font-weight="bold">HERCULES DELUXE</text>
+  <text x="300" y="348" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#aaa">10 CM Premium Sound Cracker</text>
+</svg>

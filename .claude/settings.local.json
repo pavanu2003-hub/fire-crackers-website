@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp -r ~/.claude/skills/taste-skill/skills/brutalist-skill ~/.claude/skills/)",
+      "Bash(cp -r ~/.claude/skills/taste-skill/skills/minimalist-skill ~/.claude/skills/)",
+      "Bash(cp -r ~/.claude/skills/taste-skill/skills/output-skill ~/.claude/skills/)",
+      "Bash(cp -r ~/.claude/skills/taste-skill/skills/redesign-skill ~/.claude/skills/)",
+      "Bash(cp -r ~/.claude/skills/taste-skill/skills/soft-skill ~/.claude/skills/)"
+    ]
+  }
+}

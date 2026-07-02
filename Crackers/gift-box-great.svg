@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <radialGradient id="bggr" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a0a0a"/>
+      <stop offset="100%" stop-color="#0d0505"/>
+    </radialGradient>
+    <linearGradient id="boxGr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d42030"/>
+      <stop offset="100%" stop-color="#8a0f1c"/>
+    </linearGradient>
+    <linearGradient id="lidGr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e83040"/>
+      <stop offset="100%" stop-color="#b01828"/>
+    </linearGradient>
+    <linearGradient id="ribbonGr" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffe080"/>
+      <stop offset="100%" stop-color="#c8960a"/>
+    </linearGradient>
+    <filter id="glowgr">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bggr)"/>
+
+  <!-- Background glow -->
+  <ellipse cx="300" cy="230" rx="170" ry="110" fill="#d42030" opacity="0.1" filter="url(#glowgr)"/>
+
+  <!-- Box shadow -->
+  <ellipse cx="302" cy="355" rx="110" ry="14" fill="#000" opacity="0.4"/>
+
+  <!-- Box body -->
+  <rect x="175" y="235" width="250" height="115" rx="6" fill="url(#boxGr)"/>
+  <!-- Box body sheen -->
+  <rect x="175" y="235" width="250" height="30" rx="6" fill="#fff" opacity="0.07"/>
+  <!-- Box side depth -->
+  <rect x="175" y="235" width="12" height="115" rx="2" fill="#000" opacity="0.15"/>
+
+  <!-- Lid -->
+  <rect x="163" y="200" width="274" height="42" rx="6" fill="url(#lidGr)"/>
+  <!-- Lid sheen -->
+  <rect x="163" y="200" width="274" height="14" rx="6" fill="#fff" opacity="0.1"/>
+
+  <!-- Vertical ribbon on box -->
+  <rect x="284" y="235" width="32" height="115" fill="url(#ribbonGr)" opacity="0.9"/>
+  <!-- Vertical ribbon on lid -->
+  <rect x="284" y="200" width="32" height="42" fill="url(#ribbonGr)" opacity="0.9"/>
+  <!-- Horizontal ribbon on lid -->
+  <rect x="163" y="213" width="274" height="16" fill="url(#ribbonGr)" opacity="0.8"/>
+
+  <!-- Bow loops -->
+  <ellipse cx="278" cy="200" rx="38" ry="22" fill="url(#ribbonGr)" transform="rotate(-25,278,200)"/>
+  <ellipse cx="322" cy="200" rx="38" ry="22" fill="url(#ribbonGr)" transform="rotate(25,322,200)"/>
+  <!-- Bow knot -->
+  <circle cx="300" cy="200" r="16" fill="#ffe080"/>
+  <circle cx="300" cy="200" r="9" fill="#c8960a"/>
+
+  <!-- Sparkles -->
+  <text x="145" y="185" font-size="22" fill="#f0c040" opacity="0.8" filter="url(#glowgr)">✦</text>
+  <text x="430" y="175" font-size="16" fill="#f0c040" opacity="0.6" filter="url(#glowgr)">✦</text>
+  <text x="155" y="340" font-size="14" fill="#f0c040" opacity="0.4">✦</text>
+  <text x="445" y="345" font-size="18" fill="#f0c040" opacity="0.5">✦</text>
+  <text x="480" y="240" font-size="12" fill="#f0c040" opacity="0.4">✦</text>
+
+  <!-- Label area -->
+  <rect x="163" y="358" width="274" height="30" rx="4" fill="#000" opacity="0.3"/>
+  <text x="300" y="378" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#ffe080" font-weight="bold">Gift Box — GREAT</text>
+</svg>

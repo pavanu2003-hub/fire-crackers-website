@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <radialGradient id="bgkr" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0d0d0d"/>
+    </radialGradient>
+    <linearGradient id="crackerRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#cc1122"/>
+      <stop offset="50%" stop-color="#ee2233"/>
+      <stop offset="100%" stop-color="#aa0f1a"/>
+    </linearGradient>
+    <linearGradient id="crackerGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0c040"/>
+      <stop offset="100%" stop-color="#c8a020"/>
+    </linearGradient>
+    <filter id="glowkr">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bgkr)"/>
+
+  <!-- Background glow -->
+  <ellipse cx="300" cy="240" rx="180" ry="120" fill="#cc1122" opacity="0.06"/>
+
+  <!-- String line -->
+  <path d="M 200 80 Q 300 60 400 80" stroke="#888" stroke-width="2" fill="none"/>
+
+  <!-- Row of crackers hanging from string -->
+  <!-- Cracker 1 -->
+  <line x1="220" y1="80" x2="220" y2="115" stroke="#888" stroke-width="1.5"/>
+  <rect x="205" y="115" width="30" height="55" rx="4" fill="url(#crackerRed)"/>
+  <rect x="205" y="115" width="30" height="8" rx="2" fill="url(#crackerGold)"/>
+  <rect x="205" y="162" width="30" height="8" rx="2" fill="url(#crackerGold)"/>
+  <line x1="218" y1="170" x2="218" y2="185" stroke="#888" stroke-width="1.5"/>
+
+  <!-- Cracker 2 -->
+  <line x1="255" y1="80" x2="255" y2="110" stroke="#888" stroke-width="1.5"/>
+  <rect x="240" y="110" width="30" height="55" rx="4" fill="url(#crackerRed)"/>
+  <rect x="240" y="110" width="30" height="8" rx="2" fill="url(#crackerGold)"/>
+  <rect x="240" y="157" width="30" height="8" rx="2" fill="url(#crackerGold)"/>
+  <line x1="253" y1="165" x2="253" y2="180" stroke="#888" stroke-width="1.5"/>
+
+  <!-- Cracker 3 (center, slightly bigger) -->
+  <line x1="293" y1="60" x2="293" y2="105" stroke="#888" stroke-width="1.5"/>
+  <rect x="276" y="105" width="34" height="60" rx="4" fill="url(#crackerRed)"/>
+  <rect x="276" y="105" width="34" height="9" rx="2" fill="url(#crackerGold)"/>
+  <rect x="276" y="156" width="34" height="9" rx="2" fill="url(#crackerGold)"/>
+  <!-- Fuse lit on center cracker -->
+  <line x1="293" y1="165" x2="293" y2="200" stroke="#888" stroke-width="1.5"/>
+  <circle cx="293" cy="202" r="4" fill="#ff8800" filter="url(#glowkr)"/>
+  <circle cx="293" cy="202" r="7" fill="#ff4400" opacity="0.4" filter="url(#glowkr)"/>
+
+  <!-- Cracker 4 -->
+  <line x1="332" y1="80" x2="332" y2="112" stroke="#888" stroke-width="1.5"/>
+  <rect x="317" y="112" width="30" height="55" rx="4" fill="url(#crackerRed)"/>
+  <rect x="317" y="112" width="30" height="8" rx="2" fill="url(#crackerGold)"/>
+  <rect x="317" y="159" width="30" height="8" rx="2" fill="url(#crackerGold)"/>
+  <line x1="330" y1="167" x2="330" y2="182" stroke="#888" stroke-width="1.5"/>
+
+  <!-- Cracker 5 -->
+  <line x1="368" y1="80" x2="368" y2="115" stroke="#888" stroke-width="1.5"/>
+  <rect x="353" y="115" width="30" height="55" rx="4" fill="url(#crackerRed)"/>
+  <rect x="353" y="115" width="30" height="8" rx="2" fill="url(#crackerGold)"/>
+  <rect x="353" y="162" width="30" height="8" rx="2" fill="url(#crackerGold)"/>
+  <line x1="366" y1="170" x2="366" y2="185" stroke="#888" stroke-width="1.5"/>
+
+  <!-- Spark particles from lit fuse -->
+  <circle cx="280" cy="218" r="2" fill="#ff8800" opacity="0.8"/>
+  <circle cx="305" cy="225" r="2.5" fill="#ffaa00" opacity="0.7"/>
+  <circle cx="270" cy="232" r="1.5" fill="#ff6600" opacity="0.6"/>
+  <circle cx="312" cy="212" r="1.5" fill="#ffcc00" opacity="0.6"/>
+
+  <!-- Decorative text label at bottom -->
+  <rect x="150" y="290" width="300" height="60" rx="10" fill="#cc1122" opacity="0.15"/>
+  <text x="300" y="318" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#d4a017" font-weight="bold">KRISHNA</text>
+  <text x="300" y="342" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#aaaaaa">10 CM Sound Cracker</text>
+</svg>
